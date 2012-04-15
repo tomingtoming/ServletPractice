@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+$(function() {
+  $("#input input").keyup(function() {
+    $.get("/fac",{ n : $(this).val() },function(data) {
+      $(".factorial").text("factorial:"+data);
+    });
+    $.get("/fib",{ n : $(this).val() },function(data) {
+      $(".fibonacci").text("fibonacci:"+data);
+    });
+  });
+});
+</script>
+</head>
+<body>
+  <form id="input">
+    input number here to start calculation
+    <input type="text" /><span />
+  </form>
+  <ul>
+    <li class="factorial">factorial:</li>
+    <li class="fibonacci">fibonacci:</li>
+  </ul>
+</body>
+</html>

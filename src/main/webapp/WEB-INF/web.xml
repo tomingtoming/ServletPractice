@@ -1,0 +1,19 @@
+<web-app>
+  <servlet>
+    <servlet-name>Factorial</servlet-name>
+    <servlet-class>Factorial</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Factorial</servlet-name>
+    <url-pattern>/fac</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Fibonacci</servlet-name>
+    <servlet-class>Fibonacci</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Fibonacci</servlet-name>
+    <url-pattern>/fib</url-pattern>
+  </servlet-mapping>
+</web-app>
+
