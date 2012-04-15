@@ -1,0 +1,2 @@
+this project can be executed in sbt 0.11.1 environment.
+$ sbt "~; container:start; container:reload /"
